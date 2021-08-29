@@ -1,0 +1,66 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: SystemLibrary.Common.Net.Json
+  name: SystemLibrary.Common.Net.Json
+  href: SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.html
+  commentId: N:SystemLibrary.Common.Net.Json
+  fullName: SystemLibrary.Common.Net.Json
+  nameWithType: SystemLibrary.Common.Net.Json
+- uid: SystemLibrary.Common.Net.Json.ObjectExtensions
+  name: ObjectExtensions
+  href: SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.ObjectExtensions.html
+  commentId: T:SystemLibrary.Common.Net.Json.ObjectExtensions
+  fullName: SystemLibrary.Common.Net.Json.ObjectExtensions
+  nameWithType: ObjectExtensions
+- uid: SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson(System.Object,System.Text.Json.JsonSerializerOptions)
+  name: ToJson(Object, JsonSerializerOptions)
+  href: SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.ObjectExtensions.html#SystemLibrary_Common_Net_Json_ObjectExtensions_ToJson_System_Object_System_Text_Json_JsonSerializerOptions_
+  commentId: M:SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson(System.Object,System.Text.Json.JsonSerializerOptions)
+  fullName: SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson(System.Object, System.Text.Json.JsonSerializerOptions)
+  nameWithType: ObjectExtensions.ToJson(Object, JsonSerializerOptions)
+- uid: SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson*
+  name: ToJson
+  href: SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.ObjectExtensions.html#SystemLibrary_Common_Net_Json_ObjectExtensions_ToJson_
+  commentId: Overload:SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson
+  isSpec: "True"
+  fullName: SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson
+  nameWithType: ObjectExtensions.ToJson
+- uid: SystemLibrary.Common.Net.Json.StringExtensions
+  name: StringExtensions
+  href: SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.StringExtensions.html
+  commentId: T:SystemLibrary.Common.Net.Json.StringExtensions
+  fullName: SystemLibrary.Common.Net.Json.StringExtensions
+  nameWithType: StringExtensions
+- uid: SystemLibrary.Common.Net.Json.StringExtensions.PartialJson*
+  name: PartialJson
+  href: SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.StringExtensions.html#SystemLibrary_Common_Net_Json_StringExtensions_PartialJson_
+  commentId: Overload:SystemLibrary.Common.Net.Json.StringExtensions.PartialJson
+  isSpec: "True"
+  fullName: SystemLibrary.Common.Net.Json.StringExtensions.PartialJson
+  nameWithType: StringExtensions.PartialJson
+- uid: SystemLibrary.Common.Net.Json.StringExtensions.PartialJson``1(System.String,System.String,System.Text.Json.JsonSerializerOptions)
+  name: PartialJson<T>(String, String, JsonSerializerOptions)
+  href: SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.StringExtensions.html#SystemLibrary_Common_Net_Json_StringExtensions_PartialJson__1_System_String_System_String_System_Text_Json_JsonSerializerOptions_
+  commentId: M:SystemLibrary.Common.Net.Json.StringExtensions.PartialJson``1(System.String,System.String,System.Text.Json.JsonSerializerOptions)
+  name.vb: PartialJson(Of T)(String, String, JsonSerializerOptions)
+  fullName: SystemLibrary.Common.Net.Json.StringExtensions.PartialJson<T>(System.String, System.String, System.Text.Json.JsonSerializerOptions)
+  fullName.vb: SystemLibrary.Common.Net.Json.StringExtensions.PartialJson(Of T)(System.String, System.String, System.Text.Json.JsonSerializerOptions)
+  nameWithType: StringExtensions.PartialJson<T>(String, String, JsonSerializerOptions)
+  nameWithType.vb: StringExtensions.PartialJson(Of T)(String, String, JsonSerializerOptions)
+- uid: SystemLibrary.Common.Net.Json.StringExtensions.ToJson*
+  name: ToJson
+  href: SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.StringExtensions.html#SystemLibrary_Common_Net_Json_StringExtensions_ToJson_
+  commentId: Overload:SystemLibrary.Common.Net.Json.StringExtensions.ToJson
+  isSpec: "True"
+  fullName: SystemLibrary.Common.Net.Json.StringExtensions.ToJson
+  nameWithType: StringExtensions.ToJson
+- uid: SystemLibrary.Common.Net.Json.StringExtensions.ToJson``1(System.String,System.Text.Json.JsonSerializerOptions)
+  name: ToJson<T>(String, JsonSerializerOptions)
+  href: SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.StringExtensions.html#SystemLibrary_Common_Net_Json_StringExtensions_ToJson__1_System_String_System_Text_Json_JsonSerializerOptions_
+  commentId: M:SystemLibrary.Common.Net.Json.StringExtensions.ToJson``1(System.String,System.Text.Json.JsonSerializerOptions)
+  name.vb: ToJson(Of T)(String, JsonSerializerOptions)
+  fullName: SystemLibrary.Common.Net.Json.StringExtensions.ToJson<T>(System.String, System.Text.Json.JsonSerializerOptions)
+  fullName.vb: SystemLibrary.Common.Net.Json.StringExtensions.ToJson(Of T)(System.String, System.Text.Json.JsonSerializerOptions)
+  nameWithType: StringExtensions.ToJson<T>(String, JsonSerializerOptions)
+  nameWithType.vb: StringExtensions.ToJson(Of T)(String, JsonSerializerOptions)

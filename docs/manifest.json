@@ -1,0 +1,114 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/syslib/systemlibrary-common-net-json/source/SystemLibrary.Common.Net.Json",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.ObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.ObjectExtensions.html",
+          "hash": "M8ZPghJxm7mHQ5KfVWpNbU4q5XqwIAwbBYF1qsZfDRw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.StringExtensions.html",
+          "hash": "loqcF0hALyP6wHNNrwT8LqsZ+dn/aqqQy3yOKSPDaJY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.yml",
+      "output": {
+        ".html": {
+          "relative_path": "SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.html",
+          "hash": "eBXN3Nz0unSC8eO5LNh1cvCoyYFEbk1y57ZHS6qaQq0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "SystemLibrary.Common.Net.Json/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "SystemLibrary.Common.Net.Json/toc.html",
+          "hash": "bnwMtc9ERYUhY5cenBzd+vCdcbMiU0tZmi+nYacjm68="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SystemLibrary.Common.Net.Json_index.md",
+      "output": {
+        ".html": {
+          "relative_path": "SystemLibrary.Common.Net.Json_index.html",
+          "hash": "RkT1+3bHzN3fnJPpK8qiI5anIdGW7NMnA0bZuGI6Oyc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 1
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 2
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+﻿<?xml version = "1.0" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>SystemLibrary.Common.Net.Json</id>
+
+        <version>1.0.0.7</version>
+
+        <authors>System Library</authors>
+        
+        <owners>System Library</owners>
+        
+        <projectUrl>http://systemlibrary.com/package/common-net-json</projectUrl>
+         
+        <license type="expression">Apache-2.0</license>
+        
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+		<icon>syslib-icon-64x64.png</icon>
+		
+        <releaseNotes>
+			Latest version notes: https://github.com/systemlibrary/systemlibrary-common-net-json#user-content-latest-version
+			Documentation: https://systemlibrary.github.io/systemlibrary-common-net-json/
+		</releaseNotes>
+
+        <description>SystemLibrary.Common.Net.Json package contains simple extension methods for converting to and from json. Built upon System.Text.Json package from Microsoft. Check the github pages for further documentation of the functions and classes it contains</description>
+
+        <copyright>Copyright © System Library</copyright>
+
+        <tags>C# .NET framework config extensions json partial</tags>
+
+        <dependencies>
+            <!--<dependency id="System.Text.Json" version="5.0.2" />-->
+        </dependencies>
+    </metadata>
+	
+	<files>
+		<file src="syslib-icon-64x64.png" target="" />
+	</files>
+	
+</package>
+<!-- Command: nuget pack SystemLibrary.Common.Net.Json.csproj -p Configuration=Release -->
