@@ -15,6 +15,7 @@
 
 ## Install
 - Install through Nuget Package Manager in Visual Studio
+- https://www.nuget.org/packages/SystemLibrary.Common.Net.Json/
 
 ## Docs
 https://systemlibrary.github.io/systemlibrary-common-net-json/
