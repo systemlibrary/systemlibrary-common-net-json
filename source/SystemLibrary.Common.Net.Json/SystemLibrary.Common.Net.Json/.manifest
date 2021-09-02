@@ -1,0 +1,8 @@
+{
+  "SystemLibrary.Common.Net.Json": "SystemLibrary.Common.Net.Json.yml",
+  "SystemLibrary.Common.Net.Json.ObjectExtensions": "SystemLibrary.Common.Net.Json.ObjectExtensions.yml",
+  "SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson(System.Object,System.Text.Json.JsonSerializerOptions)": "SystemLibrary.Common.Net.Json.ObjectExtensions.yml",
+  "SystemLibrary.Common.Net.Json.StringExtensions": "SystemLibrary.Common.Net.Json.StringExtensions.yml",
+  "SystemLibrary.Common.Net.Json.StringExtensions.PartialJson``1(System.String,System.String,System.Text.Json.JsonSerializerOptions)": "SystemLibrary.Common.Net.Json.StringExtensions.yml",
+  "SystemLibrary.Common.Net.Json.StringExtensions.ToJson``1(System.String,System.Text.Json.JsonSerializerOptions)": "SystemLibrary.Common.Net.Json.StringExtensions.yml"
+}

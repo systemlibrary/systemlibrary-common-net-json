@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: SystemLibrary.Common.Net.Json.ObjectExtensions
+  commentId: T:SystemLibrary.Common.Net.Json.ObjectExtensions
+  id: ObjectExtensions
+  parent: SystemLibrary.Common.Net.Json
+  children:
+  - SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson(System.Object,System.Text.Json.JsonSerializerOptions)
+  langs:
+  - csharp
+  - vb
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SystemLibrary.Common.Net.Json.ObjectExtensions
+  type: Class
+  source:
+    remote:
+      path: source/SystemLibrary.Common.Net.Json/Extensions/ObjectExtensions.cs
+      branch: master
+      repo: https://github.com/systemlibrary/systemlibrary-common-net-json.git
+    id: ObjectExtensions
+    path: Extensions/ObjectExtensions.cs
+    startLine: 7
+  assemblies:
+  - SystemLibrary.Common.Net.Json
+  namespace: SystemLibrary.Common.Net.Json
+  summary: "\nCommon extensions for json serialization and deserialization\n"
+  example: []
+  syntax:
+    content: public static class ObjectExtensions
+    content.vb: Public Module ObjectExtensions
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson(System.Object,System.Text.Json.JsonSerializerOptions)
+  commentId: M:SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson(System.Object,System.Text.Json.JsonSerializerOptions)
+  id: ToJson(System.Object,System.Text.Json.JsonSerializerOptions)
+  isExtensionMethod: true
+  parent: SystemLibrary.Common.Net.Json.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToJson(Object, JsonSerializerOptions)
+  nameWithType: ObjectExtensions.ToJson(Object, JsonSerializerOptions)
+  fullName: SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson(System.Object, System.Text.Json.JsonSerializerOptions)
+  type: Method
+  source:
+    remote:
+      path: source/SystemLibrary.Common.Net.Json/Extensions/ObjectExtensions.cs
+      branch: master
+      repo: https://github.com/systemlibrary/systemlibrary-common-net-json.git
+    id: ToJson
+    path: Extensions/ObjectExtensions.cs
+    startLine: 23
+  assemblies:
+  - SystemLibrary.Common.Net.Json
+  namespace: SystemLibrary.Common.Net.Json
+  summary: "\nConvert object to json\n"
+  example:
+  - "\n<pre><code>class User {\n    public string FirstName { get;set; }\n}\n\nvar json = new User().ToJson();\njson.Contains(&quot;firstName&quot;) //True, returns camelCased json by default</code></pre>\n"
+  syntax:
+    content: public static string ToJson(this object obj, JsonSerializerOptions options = null)
+    parameters:
+    - id: obj
+      type: System.Object
+    - id: options
+      type: System.Text.Json.JsonSerializerOptions
+    return:
+      type: System.String
+      description: Returns a json formatted string representation of the object or null if object is null
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToJson(obj As Object, options As JsonSerializerOptions = Nothing) As String
+  overload: SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: SystemLibrary.Common.Net.Json
+  commentId: N:SystemLibrary.Common.Net.Json
+  name: SystemLibrary.Common.Net.Json
+  nameWithType: SystemLibrary.Common.Net.Json
+  fullName: SystemLibrary.Common.Net.Json
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson*
+  commentId: Overload:SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson
+  name: ToJson
+  nameWithType: ObjectExtensions.ToJson
+  fullName: SystemLibrary.Common.Net.Json.ObjectExtensions.ToJson
+- uid: System.Text.Json.JsonSerializerOptions
+  commentId: T:System.Text.Json.JsonSerializerOptions
+  parent: System.Text.Json
+  isExternal: true
+  name: JsonSerializerOptions
+  nameWithType: JsonSerializerOptions
+  fullName: System.Text.Json.JsonSerializerOptions
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json

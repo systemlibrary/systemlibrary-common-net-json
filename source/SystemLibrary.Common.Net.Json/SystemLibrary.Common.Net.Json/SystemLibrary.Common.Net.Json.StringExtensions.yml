@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: SystemLibrary.Common.Net.Json.StringExtensions
+  commentId: T:SystemLibrary.Common.Net.Json.StringExtensions
+  id: StringExtensions
+  parent: SystemLibrary.Common.Net.Json
+  children:
+  - SystemLibrary.Common.Net.Json.StringExtensions.PartialJson``1(System.String,System.String,System.Text.Json.JsonSerializerOptions)
+  - SystemLibrary.Common.Net.Json.StringExtensions.ToJson``1(System.String,System.Text.Json.JsonSerializerOptions)
+  langs:
+  - csharp
+  - vb
+  name: StringExtensions
+  nameWithType: StringExtensions
+  fullName: SystemLibrary.Common.Net.Json.StringExtensions
+  type: Class
+  source:
+    remote:
+      path: source/SystemLibrary.Common.Net.Json/Extensions/StringExtensions.cs
+      branch: master
+      repo: https://github.com/systemlibrary/systemlibrary-common-net-json.git
+    id: StringExtensions
+    path: Extensions/StringExtensions.cs
+    startLine: 7
+  assemblies:
+  - SystemLibrary.Common.Net.Json
+  namespace: SystemLibrary.Common.Net.Json
+  summary: "\nStringExtensions for Json deserialization and serialization\n"
+  example: []
+  syntax:
+    content: public static class StringExtensions
+    content.vb: Public Module StringExtensions
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: SystemLibrary.Common.Net.Json.StringExtensions.PartialJson``1(System.String,System.String,System.Text.Json.JsonSerializerOptions)
+  commentId: M:SystemLibrary.Common.Net.Json.StringExtensions.PartialJson``1(System.String,System.String,System.Text.Json.JsonSerializerOptions)
+  id: PartialJson``1(System.String,System.String,System.Text.Json.JsonSerializerOptions)
+  isExtensionMethod: true
+  parent: SystemLibrary.Common.Net.Json.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: PartialJson<T>(String, String, JsonSerializerOptions)
+  nameWithType: StringExtensions.PartialJson<T>(String, String, JsonSerializerOptions)
+  fullName: SystemLibrary.Common.Net.Json.StringExtensions.PartialJson<T>(System.String, System.String, System.Text.Json.JsonSerializerOptions)
+  type: Method
+  source:
+    remote:
+      path: source/SystemLibrary.Common.Net.Json/Extensions/StringExtensions.cs
+      branch: master
+      repo: https://github.com/systemlibrary/systemlibrary-common-net-json.git
+    id: PartialJson
+    path: Extensions/StringExtensions.cs
+    startLine: 81
+  assemblies:
+  - SystemLibrary.Common.Net.Json
+  namespace: SystemLibrary.Common.Net.Json
+  summary: "\nReturn a part of the json as T\n\nSearches through the json formatted text to find the property it takes as input, and outputs T\n\nSupports a &apos;search path&apos; seperated by a forward slash to the leaf property you want to convert to T\n\nSearching for a property by name is case-insensitive\n\nThrows exception if the json formatted text is invalid or a parent property to the leaf do not exist in the json text\n\nReturns T or null if the leaf property do not exist\n"
+  example:
+  - "\n<pre><code>//Assume json data:\n{\n    &quot;users&quot; [\n        ...\n    ]\n}\nvar users = data.PartialJson&lt;List&lt;User>>();\n//Searches for a property &quot;users&quot;\n\n\n//Assume json data:\n{\n    &quot;users&quot; [\n        ...\n    ],\n    &quot;deactivated&quot;: {\n        &quot;users&quot;: [\n            ...\n        ]\n    }\n}\nvar users = data.PartialJson&lt;List&lt;User>>(&quot;deactivated/users&quot;);\n//Searches for a property &quot;deactivated&quot; anywhere in the json, then inside that a &quot;users&quot; property\n\n\n//Assume json data:\n{\n    &quot;text&quot;: &quot;hello world&quot;,\n    &quot;employees&quot;: [\n        {\n            &quot;hired&quot;: [\n               ...\n            ],\n            &quot;fired&quot;: [\n                ...\n            ]\n        }\n    ],\n}\n\nvar users = data.PartialJson&lt;List&lt;User>>(&quot;fired&quot;);\n//Searches for a property anywhere in the json named &quot;fired&quot;</code></pre>\n"
+  syntax:
+    content: >-
+      public static T PartialJson<T>(this string json, string findPropertySearchPath = null, JsonSerializerOptions options = null)
+
+          where T : class
+    parameters:
+    - id: json
+      type: System.String
+      description: Json formatted string
+    - id: findPropertySearchPath
+      type: System.String
+      description: "\nName of the property that will be deserialized as T\n\nExample: root/property1/property2/leaf where &apos;leaf&apos; will be deserialized as T\n"
+    - id: options
+      type: System.Text.Json.JsonSerializerOptions
+    typeParameters:
+    - id: T
+      description: >
+        A class or list/array of a class
+
+
+        If T is a list or array and no &apos;findPropertySearchPath&apos; is specified, the Searcher appends an &apos;s&apos; as suffix
+
+
+        For instance List&lt;User> will search for a property &apos;users&apos;, case insensitive and &apos;s&apos; is appended
+    return:
+      type: '{T}'
+      description: Returns json as T or null if not found
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function PartialJson(Of T As Class)(json As String, findPropertySearchPath As String = Nothing, options As JsonSerializerOptions = Nothing) As T
+  overload: SystemLibrary.Common.Net.Json.StringExtensions.PartialJson*
+  nameWithType.vb: StringExtensions.PartialJson(Of T)(String, String, JsonSerializerOptions)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: SystemLibrary.Common.Net.Json.StringExtensions.PartialJson(Of T)(System.String, System.String, System.Text.Json.JsonSerializerOptions)
+  name.vb: PartialJson(Of T)(String, String, JsonSerializerOptions)
+- uid: SystemLibrary.Common.Net.Json.StringExtensions.ToJson``1(System.String,System.Text.Json.JsonSerializerOptions)
+  commentId: M:SystemLibrary.Common.Net.Json.StringExtensions.ToJson``1(System.String,System.Text.Json.JsonSerializerOptions)
+  id: ToJson``1(System.String,System.Text.Json.JsonSerializerOptions)
+  isExtensionMethod: true
+  parent: SystemLibrary.Common.Net.Json.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToJson<T>(String, JsonSerializerOptions)
+  nameWithType: StringExtensions.ToJson<T>(String, JsonSerializerOptions)
+  fullName: SystemLibrary.Common.Net.Json.StringExtensions.ToJson<T>(System.String, System.Text.Json.JsonSerializerOptions)
+  type: Method
+  source:
+    remote:
+      path: source/SystemLibrary.Common.Net.Json/Extensions/StringExtensions.cs
+      branch: master
+      repo: https://github.com/systemlibrary/systemlibrary-common-net-json.git
+    id: ToJson
+    path: Extensions/StringExtensions.cs
+    startLine: 111
+  assemblies:
+  - SystemLibrary.Common.Net.Json
+  namespace: SystemLibrary.Common.Net.Json
+  summary: "\nConvert string formatted json to object T\n\nDefault options are: \n- case insensitive\n- allows trailing commas\n- camel cased\n\nThrows exception if json has invalid formatted json text\n"
+  example:
+  - "\n<pre><code>class User {\n    public string FirstName;\n    public int Age { get; set;}\n}\nvar json = &quot;{\n    &quot;firstName&quot;: &apos;hello&apos;,\n    &quot;age&quot;: 10\n}&quot;;\n\nvar user = json.ToJson&lt;User>;</code></pre>\n"
+  syntax:
+    content: >-
+      public static T ToJson<T>(this string json, JsonSerializerOptions options = null)
+
+          where T : class
+    parameters:
+    - id: json
+      type: System.String
+    - id: options
+      type: System.Text.Json.JsonSerializerOptions
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+      description: Returns T or null if json is null or empty
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToJson(Of T As Class)(json As String, options As JsonSerializerOptions = Nothing) As T
+  overload: SystemLibrary.Common.Net.Json.StringExtensions.ToJson*
+  nameWithType.vb: StringExtensions.ToJson(Of T)(String, JsonSerializerOptions)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: SystemLibrary.Common.Net.Json.StringExtensions.ToJson(Of T)(System.String, System.Text.Json.JsonSerializerOptions)
+  name.vb: ToJson(Of T)(String, JsonSerializerOptions)
+references:
+- uid: SystemLibrary.Common.Net.Json
+  commentId: N:SystemLibrary.Common.Net.Json
+  name: SystemLibrary.Common.Net.Json
+  nameWithType: SystemLibrary.Common.Net.Json
+  fullName: SystemLibrary.Common.Net.Json
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SystemLibrary.Common.Net.Json.StringExtensions.PartialJson*
+  commentId: Overload:SystemLibrary.Common.Net.Json.StringExtensions.PartialJson
+  name: PartialJson
+  nameWithType: StringExtensions.PartialJson
+  fullName: SystemLibrary.Common.Net.Json.StringExtensions.PartialJson
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Text.Json.JsonSerializerOptions
+  commentId: T:System.Text.Json.JsonSerializerOptions
+  parent: System.Text.Json
+  isExternal: true
+  name: JsonSerializerOptions
+  nameWithType: JsonSerializerOptions
+  fullName: System.Text.Json.JsonSerializerOptions
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SystemLibrary.Common.Net.Json.StringExtensions.ToJson*
+  commentId: Overload:SystemLibrary.Common.Net.Json.StringExtensions.ToJson
+  name: ToJson
+  nameWithType: StringExtensions.ToJson
+  fullName: SystemLibrary.Common.Net.Json.StringExtensions.ToJson

@@ -1,0 +1,53 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "**/*.csproj"
+          ]
+        }
+      ],
+      "dest": "C:/syslib/systemlibrary-common-net-json/source/SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "filter": "SystemLibrary.Common.Net.Json_filter.yml"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+			"C:/syslib/systemlibrary-common-net-json/source/SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json/**.yml",
+			"SystemLibrary.Common.Net.Json/**.yml",
+			"SystemLibrary.Common.Net.Json_index.md",
+			"index.md"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+		  "files": [
+				"**/index.md"
+			],
+			"exclude": [
+			    "obj/**",
+			    "bin/**",
+			    "properties/**"
+			]
+      }
+    ],
+    "dest": "C:/syslib/systemlibrary-common-net-json/source/SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json_site",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "docfx_custom_template"
+    ],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
+  }
+}
