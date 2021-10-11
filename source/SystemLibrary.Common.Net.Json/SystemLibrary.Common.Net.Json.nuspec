@@ -3,7 +3,7 @@
     <metadata>
         <id>SystemLibrary.Common.Net.Json</id>
 
-        <version>1.0.0.7</version>
+        <version>1.0.0.8</version>
 
         <authors>System Library</authors>
         
@@ -18,11 +18,15 @@
 		<icon>syslib-icon-64x64.png</icon>
 		
         <releaseNotes>
-			Latest version notes: https://github.com/systemlibrary/systemlibrary-common-net-json#user-content-latest-version
-			Documentation: https://systemlibrary.github.io/systemlibrary-common-net-json/
+			Latest version: https://github.com/systemlibrary/systemlibrary-common-net-json#user-content-latest-version
+			
 		</releaseNotes>
 
-        <description>SystemLibrary.Common.Net.Json package contains simple extension methods for converting to and from json. Built upon System.Text.Json package from Microsoft. Check the github pages for further documentation of the functions and classes it contains</description>
+        <description>SystemLibrary.Common.Net.Json package contains simple extension methods for converting to and from json.
+
+		Built upon System.Text.Json package from Microsoft. 
+		
+		Documentation: https://systemlibrary.github.io/systemlibrary-common-net-json/</description>
 
         <copyright>Copyright © System Library</copyright>
 

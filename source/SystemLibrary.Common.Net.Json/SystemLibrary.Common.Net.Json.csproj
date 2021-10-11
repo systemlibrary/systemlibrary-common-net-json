@@ -60,7 +60,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="SystemLibrary.Common.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\Packages\SystemLibrary.Common.Net.1.0.0.9\lib\net48\SystemLibrary.Common.Net.dll</HintPath>
+      <HintPath>..\..\..\Packages\SystemLibrary.Common.Net.1.0.0.16\lib\net48\SystemLibrary.Common.Net.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -2,11 +2,9 @@
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using SystemLibrary.Common.Net;
-using SystemLibrary.Common.Net.Json;
 using SystemLibrary.Common.Net.Json.Tests.Models;
 
-namespace Common.Net.Tests.JsonTokenSearcher
+namespace SystemLibrary.Common.Net.Json.Tests.JsonTokenSearcher
 {
     [TestClass]
     public class JsonTokenSearcherTest

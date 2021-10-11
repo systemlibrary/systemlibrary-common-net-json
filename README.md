@@ -6,7 +6,7 @@
 - SystemLibrary.Common.Net
 
 ## Latest Version
-- Added better comments and code samples for each method
+- Updated to latest dependency version of SystemLibrary.Common.Net
 
 ## Description
 - Extension methods on object and strings to simplify converting objects back and to json (serialization/deserialization)
