@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.ObjectExtensions.html",
-          "hash": "M8ZPghJxm7mHQ5KfVWpNbU4q5XqwIAwbBYF1qsZfDRw="
+          "hash": "uvltsWBdjMW/REbWE+vYia1OEbvnomo4cCKSnYNXJZ8="
         }
       },
       "is_incremental": true,
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.StringExtensions.html",
-          "hash": "loqcF0hALyP6wHNNrwT8LqsZ+dn/aqqQy3yOKSPDaJY="
+          "hash": "8j+mwVBUwlTGULQeC5RLkksT6Dmg/lgHfkDtwT3NkkM="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.html",
-          "hash": "eBXN3Nz0unSC8eO5LNh1cvCoyYFEbk1y57ZHS6qaQq0="
+          "hash": "svQCzi0MqdlcEYvTmg1f+7cD1VwDVFxGl1AuJWwXTpg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "SystemLibrary.Common.Net.Json/toc.html",
-          "hash": "bnwMtc9ERYUhY5cenBzd+vCdcbMiU0tZmi+nYacjm68="
+          "hash": "aQzZPWQ/gSFXYzdeN8YugOFzRgsr/nXv4PwU/WO47Jo="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "SystemLibrary.Common.Net.Json_index.html",
-          "hash": "RkT1+3bHzN3fnJPpK8qiI5anIdGW7NMnA0bZuGI6Oyc="
+          "hash": "IBXOlqU5tH7+g6bFX05Xg9ACdAP5F5Z8gM4ZScmZyXg="
         }
       },
       "is_incremental": true,
@@ -83,7 +83,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 2
+          "skipped_file_count": 3
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

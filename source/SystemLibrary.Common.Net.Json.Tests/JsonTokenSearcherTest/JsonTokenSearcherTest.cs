@@ -26,6 +26,20 @@ namespace SystemLibrary.Common.Net.Json.Tests.JsonTokenSearcher
         }
 
         [TestMethod]
+        public void Read_Employees_MultipleTimesInARow()
+        {
+            var data = GetData();
+            var employees1 = data.PartialJson<List<Employee>>();
+            var employees2 = data.PartialJson<List<Employee>>();
+
+            Assert.IsTrue(employees1.Count == employees2.Count && employees1.Count > 0);
+            Assert.IsTrue(employees1[0].FirstName.Contains("1"));
+            Assert.IsTrue(employees1[0].Age == 1);
+            Assert.IsTrue(employees2[0].FirstName.Contains("1"));
+            Assert.IsTrue(employees2[0].Age == 1);
+        }
+
+        [TestMethod]
         public void Read_Employees_Specific_Property()
         {
             var data = GetData();
@@ -76,6 +90,5 @@ namespace SystemLibrary.Common.Net.Json.Tests.JsonTokenSearcher
             Assert.IsTrue(users[0].FirstName.Contains("FirstNameListUsers1"));
             Assert.IsTrue(users[0].Age == 1);
         }
-
     }
 }

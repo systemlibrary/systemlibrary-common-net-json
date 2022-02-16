@@ -3,37 +3,46 @@
     <metadata>
         <id>SystemLibrary.Common.Net.Json</id>
 
-        <version>1.0.0.8</version>
+        <version>2.0.0.8</version>
 
         <authors>System Library</authors>
         
         <owners>System Library</owners>
         
-        <projectUrl>http://systemlibrary.com/package/common-net-json</projectUrl>
+        <projectUrl>https://systemlibrary.com/package/SystemLibrary.Common.Net.Json</projectUrl>
          
         <license type="expression">Apache-2.0</license>
         
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
 
 		<icon>syslib-icon-64x64.png</icon>
-		
-        <releaseNotes>
-			Latest version: https://github.com/systemlibrary/systemlibrary-common-net-json#user-content-latest-version
-			
+
+		<releaseNotes>
+			Latest version:
+			https://github.com/systemlibrary/systemlibrary-common-net-json#user-content-latest-version
 		</releaseNotes>
 
-        <description>SystemLibrary.Common.Net.Json package contains simple extension methods for converting to and from json.
+		<description>
+			SystemLibrary.Common.Net.Json for any .NET >= 5 application - various reuseable extensions and a partial json searcher
 
-		Built upon System.Text.Json package from Microsoft. 
+			Selling points:
+			* Extension for converting C# object to json string
+			* Extension for converting json string to C# object
+			* Extension for converting parts of a json string to C# object
+			
+			Documentation:
+			https://systemlibrary.github.io/systemlibrary-common-net-json/
+
+			Source code:
+			https://github.com/systemlibrary/systemlibrary-common-net-json/
+		</description>
 		
-		Documentation: https://systemlibrary.github.io/systemlibrary-common-net-json/</description>
-
         <copyright>Copyright © System Library</copyright>
 
-        <tags>C# .NET framework config extensions json partial</tags>
+        <tags>C# .NET 5.0 config extensions json partial</tags>
 
         <dependencies>
-            <!--<dependency id="System.Text.Json" version="5.0.2" />-->
+			<dependency id="SystemLibrary.Common.Net" version="2.0.0.14" />
         </dependencies>
     </metadata>
 	

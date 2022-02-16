@@ -9,6 +9,12 @@ namespace SystemLibrary.Common.Net.Json
     {
         /// <summary>
         /// Convert object to json
+        /// 
+        /// Default options are: 
+        /// - case insensitive
+        /// - allows trailing commas
+        /// - camel cased
+        /// 
         /// </summary>
         /// <returns>Returns a json formatted string representation of the object or null if object is null</returns>
         /// <example>
@@ -17,8 +23,11 @@ namespace SystemLibrary.Common.Net.Json
         ///     public string FirstName { get;set; }
         /// }
         /// 
-        /// var json = new User().ToJson();
-        /// json.Contains("firstName") //True, returns camelCased json by default
+        /// var user = new User();
+        /// user.FirstName = "Hello World";
+        /// var json = user.ToJson();
+        /// var contains = json.Contains("firstName") && json.Contains("Hello World"); 
+        /// //contains is True, note that ToJson() has formatted 'FirstName' to camelCasing
         /// </code>
         /// </example>
         public static string ToJson(this object obj, JsonSerializerOptions options = null)

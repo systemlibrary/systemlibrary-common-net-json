@@ -1,0 +1,1 @@
+nuget pack SystemLibrary.Common.Net.Json.csproj -p Configuration=Release

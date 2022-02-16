@@ -35,18 +35,25 @@ namespace SystemLibrary.Common.Net.Json
         /// <returns>Returns json as T or null if not found</returns>
         /// <example>
         /// <code>
-        /// //Assume json data:
-        /// {
+        /// //Assume json string stored in a C# variable named 'data':
+        /// var data = "{
         ///     "users" [
         ///         ...
         ///     ]
-        /// }
+        /// }";
         /// var users = data.PartialJson&lt;List&lt;User&gt;&gt;();
-        /// //Searches for a property "users"
+        /// //When a property is not given as first argument, it uses the type name in the following manner:
+        /// //1. Takes the type name, in our case 'User'
+        /// //2. If type is a List or Array, it adds a plural 's', so now we have 'Users'
+        /// //3. It lowers first letter to match camel casing as thats the "norm", so now we have 'users'
         /// 
+        /// //You could also pass in "users" manually if you wanted, result is the same:
+        /// //var users = data.PartialJson&lt;List&lt;User&gt;&gt;("users");
+        /// //Note: There's an automation on the Type if property to search for is not specified
+        /// //Note 2: It would return the first "users" property it would find, no matter how deep in the json it is
         /// 
-        /// //Assume json data:
-        /// {
+        /// //Assume json string stored in a C# variable named 'data':
+        /// var data = "{
         ///     "users" [
         ///         ...
         ///     ],
@@ -55,13 +62,13 @@ namespace SystemLibrary.Common.Net.Json
         ///             ...
         ///         ]
         ///     }
-        /// }
+        /// }";
         /// var users = data.PartialJson&lt;List&lt;User&gt;&gt;("deactivated/users");
         /// //Searches for a property "deactivated" anywhere in the json, then inside that a "users" property
         /// 
         /// 
-        /// //Assume json data:
-        /// {
+        /// //Assume json string stored in a C# variable named 'data':
+        /// var data = "{
         ///     "text": "hello world",
         ///     "employees": [
         ///         {
@@ -73,7 +80,7 @@ namespace SystemLibrary.Common.Net.Json
         ///             ]
         ///         }
         ///     ],
-        /// }
+        /// }";
         /// 
         /// var users = data.PartialJson&lt;List&lt;User&gt;&gt;("fired");
         /// //Searches for a property anywhere in the json named "fired"

@@ -4,24 +4,28 @@ namespace SystemLibrary.Common.Net.Json
 {
     partial class PartialJsonSearcher
     {
-        static JsonSerializerOptions DefaultJsonSerializerOptions = new JsonSerializerOptions
-        {
-            MaxDepth = 32,
-            AllowTrailingCommas = true,
-            PropertyNameCaseInsensitive = true,
-            WriteIndented = false,
-            PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-        };
+        static AppSettingsConfig Config => AppSettingsConfig.Current;
+
+        static JsonSerializerOptions _DefaultJsonSerializerOptions;
+        static JsonSerializerOptions DefaultJsonSerializerOptions => 
+            _DefaultJsonSerializerOptions != null ? _DefaultJsonSerializerOptions 
+            : (_DefaultJsonSerializerOptions = new JsonSerializerOptions {
+                MaxDepth = Config.SystemLibraryCommonNetJson.MaxDepth,
+                AllowTrailingCommas = Config.SystemLibraryCommonNetJson.AllowTrailingCommas,
+                PropertyNameCaseInsensitive = Config.SystemLibraryCommonNetJson.PropertyNameCaseInsensitive,
+                WriteIndented = Config.SystemLibraryCommonNetJson.WriteIndented,
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            });
        
         internal static JsonSerializerOptions Default(JsonSerializerOptions options)
         {
             if (options != null)
             {
-                if (options.MaxDepth < 8)
-                    options.MaxDepth = 8;
+                if (options.MaxDepth < 4)
+                    options.MaxDepth = 4;
 
-                if (options.MaxDepth > 128)
-                    options.MaxDepth = 128;
+                if (options.MaxDepth > 256)
+                    options.MaxDepth = 256;
 
                 return options;
             }

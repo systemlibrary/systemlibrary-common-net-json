@@ -1,24 +1,34 @@
 # SystemLibrary Common Net Json
 
 ## Requirements
-- .NET 4.8
+- &gt;= .NET 5
 - System.Text.Json
-- SystemLibrary.Common.Net
+- SystemLibrary.Common.Net &gt;= 2.0.6
 
 ## Latest Version
-- Updated to latest dependency version of SystemLibrary.Common.Net
+- Updated Framework Repository to .Net 5
+- Updated depencendies to their latest versions
 
 ## Description
-- Extension methods on object and strings to simplify converting objects back and to json (serialization/deserialization)
-- Easily also convert a part of a json string to a C# class or a list/array through the string extension method "PartialJson<T>()"
-- See the Docs for further code and samples
+SystemLibrary.Common.Net.Json for any .NET &gt;= 5 application - various reuseable extensions and a partial json searcher
 
-## Install
-- Install through Nuget Package Manager in Visual Studio
-- https://www.nuget.org/packages/SystemLibrary.Common.Net.Json/
+Selling points:
+* Extension for converting C# object to json string
+* Extension for converting json string to C# object
+* Extension for converting parts of a json string to C# object
 
-## Docs
+## Docs			
+Documentation with samples:
 https://systemlibrary.github.io/systemlibrary-common-net-json/
 
+## Source
+https://github.com/systemlibrary/systemlibrary-common-net-json/
+
+## Nuget
+https://www.nuget.org/packages/SystemLibrary.Common.Net.Json/
+
+## Suggestions and feedback
+support@systemlibrary.com
+
 ## Lisence
-- It's free forever, copy paste as you'd like...
+- It's free forever, copy paste as you'd like
