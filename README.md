@@ -21,9 +21,6 @@ Selling points:
 Documentation with samples:
 https://systemlibrary.github.io/systemlibrary-common-net-json/
 
-## Source
-https://github.com/systemlibrary/systemlibrary-common-net-json/
-
 ## Nuget
 https://www.nuget.org/packages/SystemLibrary.Common.Net.Json/
 
