@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "SystemLibrary.Common.Net.Json/SystemLibrary.Common.Net.Json.StringExtensions.html",
-          "hash": "2wqR7V5W4XAolY9VnyXMNzy/hG7oVfYiiDJkhgDowYM="
+          "hash": "QJJbXj4bqiM2HDSkM3wNF/eGfT2UEShVKh2Uoy/manE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -36,7 +36,7 @@
           "hash": "svQCzi0MqdlcEYvTmg1f+7cD1VwDVFxGl1AuJWwXTpg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -83,7 +83,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 3
+          "skipped_file_count": 2
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
