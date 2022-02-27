@@ -22,7 +22,7 @@
 	}
 ```
 
-## Override default module's configurations
+## Override default configurations
 * Example of all default configurations in this package:
 
 appSettings.json:
