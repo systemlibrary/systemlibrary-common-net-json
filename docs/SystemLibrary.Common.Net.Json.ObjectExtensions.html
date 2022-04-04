@@ -144,6 +144,7 @@
   <h3 id="methods">Methods
   </h3>
   
+  <div class="custom-container">
   
   <div class="custom-source-code-link-container custom-source-code-link--SystemLibrary_Common_Net_Json_ObjectExtensions_ToJson_System_Object_System_Text_Json_JsonSerializerOptions_">
   	<span class="small pull-right mobile-hide">
@@ -202,6 +203,7 @@
   			</table>
   		</div>
   	</div>
+  </div>
   </div>
   
   
@@ -458,8 +460,17 @@
   				continue;
   			}
   
-  			if (value.includes('[DocfxHide]')) {
-  				items[i].classList.add("docfxhide-attribute");
+  			if (value.includes('[DocFxHide]')) {
+  				let parent = items[i].parentNode;
+  				if(parent) {
+  					if(parent.parentNode !== null && parent.parentNode.classList.contains("custom-container")) {
+  						parent.parentNode.classList.add("docfxhide-attribute");
+  					} else {
+  						parent.classList.add("docfxhide-attribute");
+  					}
+  				} else {
+  					items[i].classList.add("docfxhide-attribute");
+  				}
   				continue;
   			}
   

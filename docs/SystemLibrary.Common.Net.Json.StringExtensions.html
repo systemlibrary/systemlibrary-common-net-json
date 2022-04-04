@@ -144,6 +144,7 @@
   <h3 id="methods">Methods
   </h3>
   
+  <div class="custom-container">
   <div class="custom-menu-summary-data">
   	<div class="markdown level1 summary member-summary"><p>Return a part of the json as T</p>
 <p>Searches through the json formatted text to find the property it takes as input, and outputs T</p>
@@ -164,7 +165,6 @@
   
   <div class="custom-menu-data">
   	<h4 id="SystemLibrary_Common_Net_Json_StringExtensions_PartialJson__1_System_String_System_String_System_Text_Json_JsonSerializerOptions_" data-uid="SystemLibrary.Common.Net.Json.StringExtensions.PartialJson``1(System.String,System.String,System.Text.Json.JsonSerializerOptions)" class="h4-custom-functionName">public static T PartialJson&lt;T&gt;(this string json, string findPropertySearchPath = null, JsonSerializerOptions options = null)
-
     where T : class</h4>
   	<div class="custom-menu-data-container">
   		<div class="custom-menu-data-name" style="display: none;">
@@ -296,9 +296,11 @@ var users = data.PartialJson&lt;List&lt;User>>(&quot;fired&quot;);
   		</div>
   	</div>
   </div>
+  </div>
   
   
   
+  <div class="custom-container">
   <div class="custom-menu-summary-data">
   	<div class="markdown level1 summary member-summary"><p>Convert string formatted json to object T</p>
 <p>Default options are:</p>
@@ -321,7 +323,6 @@ var users = data.PartialJson&lt;List&lt;User>>(&quot;fired&quot;);
   
   <div class="custom-menu-data">
   	<h4 id="SystemLibrary_Common_Net_Json_StringExtensions_ToJson__1_System_String_System_Text_Json_JsonSerializerOptions_" data-uid="SystemLibrary.Common.Net.Json.StringExtensions.ToJson``1(System.String,System.Text.Json.JsonSerializerOptions)" class="h4-custom-functionName">public static T ToJson&lt;T&gt;(this string json, JsonSerializerOptions options = null)
-
     where T : class</h4>
   	<div class="custom-menu-data-container">
   		<div class="custom-menu-data-name" style="display: none;">
@@ -402,6 +403,7 @@ var user = json.ToJson&lt;User>;</code></pre>
   			</table>
   		</div>
   	</div>
+  </div>
   </div>
   
   
@@ -658,8 +660,17 @@ var user = json.ToJson&lt;User>;</code></pre>
   				continue;
   			}
   
-  			if (value.includes('[DocfxHide]')) {
-  				items[i].classList.add("docfxhide-attribute");
+  			if (value.includes('[DocFxHide]')) {
+  				let parent = items[i].parentNode;
+  				if(parent) {
+  					if(parent.parentNode !== null && parent.parentNode.classList.contains("custom-container")) {
+  						parent.parentNode.classList.add("docfxhide-attribute");
+  					} else {
+  						parent.classList.add("docfxhide-attribute");
+  					}
+  				} else {
+  					items[i].classList.add("docfxhide-attribute");
+  				}
   				continue;
   			}
   

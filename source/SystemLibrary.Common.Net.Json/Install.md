@@ -1,5 +1,9 @@
 ﻿# Installation
 
+# DEPRECATED/OBSOLETE
+- All code from this repo is copy pasted into SystemLibrary.Common.Net version >= 2.0.1.2:
+- https://github.com/systemlibrary/systemlibrary-common-net#latest-version
+
 ## Install nuget package
 
 * Open your project/solution in Visual Studio
